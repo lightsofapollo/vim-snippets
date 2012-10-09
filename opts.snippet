@@ -1,0 +1,11 @@
+var key;
+
+if (typeof(${1:options}) === 'undefined') {
+  $1 = {};
+}
+
+for (key in $1) {
+  if ($1.hasOwnProperty(key)) {
+    this[key] = options[key];
+  }
+}
